@@ -1,0 +1,32 @@
+*{
+    font-family: 微軟正黑體;
+    margin: 0;
+    padding: 0;
+    background: #d8dad856;
+}
+
+nav{
+    display: grid;
+    grid-template-columns: 20% 70% 10%;
+    color: #091d09;
+    font-size: 14pt;
+    font-weight: bold;
+    box-shadow: 4px 4px 14px rgba(189, 189, 189, 0.116);
+    align-items: center;
+    padding: 10px 30px;
+}
+
+nav a{
+    padding: 20px;
+    text-decoration: none;
+    
+}
+
+nav img{
+    width: 30%;
+    margin: 3px;
+}
+
+#link img{
+    width: 10%;
+}
