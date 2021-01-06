@@ -2,31 +2,126 @@
     font-family: 微軟正黑體;
     margin: 0;
     padding: 0;
-    background: #d8dad856;
+    
 }
 
 nav{
+    background-color: #f6f6f6;
     display: grid;
     grid-template-columns: 20% 70% 10%;
-    color: #091d09;
-    font-size: 14pt;
-    font-weight: bold;
     box-shadow: 4px 4px 14px rgba(189, 189, 189, 0.116);
     align-items: center;
     padding: 10px 30px;
 }
 
-nav a{
-    padding: 20px;
+#link a{
+    padding:0 20px;
     text-decoration: none;
-    
+    color:rgb(109, 110, 109);
+    font-size: 14pt;
+    font-weight: 900;
+    border: 0;
+    transition: 0.5s;
+
 }
 
-nav img{
+#link a:hover{
+    color: #091d0998;
+    border: 5px #091d09;
+}
+
+#LOGO img{
     width: 30%;
-    margin: 3px;
+    padding:2px;
 }
 
-#link img{
-    width: 10%;
+#social img{
+    width: 30%;
+}
+
+#product{
+    
+    margin:10px auto ;
+}
+
+#product > div {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+
+#product .pic img{
+    margin-top: -3px;
+    width: 100%;
+    height: 400px;
+    padding: 0px;
+    object-fit: cover;
+}
+
+div .text{
+
+    padding: 120px 50px 0px;
+}
+
+div .text h1{
+    font-size: 16pt;
+    font-weight: 600;
+    padding: 30px 0;
+}
+
+div .text p{
+    font-size: 12pt;
+    width: 350px;
+    line-height: 1.8;
+    padding: 20px 0;
+}
+
+#product > div:nth-child(2) {
+    grid-template-areas:" left right";
+    grid-template-columns: 50% 50%;
+}
+
+#product > div:nth-child(2) .pic{
+    grid-area: left;
+}
+
+#product > div:nth-child(2) .text{
+    grid-area: right;
+}
+
+/* 按鈕樣式 */
+.button {
+    padding: 6px 20px;
+    border:1px solid #091d09;
+    text-decoration: none;
+    color: #091d09;
+    transition: 0.5s;
+}
+
+.button:hover{
+    background: #091d094f;
+    color: white;
+}
+
+#inf  {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 10px;
+}
+
+
+#inf .pic img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+#inf img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+#inf .text{
+    padding:10px 20px;
 }
